@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\MicroservicioOfertas"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\spring-server-generated-orquestador"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\spring-server-generated_negocios\spring-server"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\spring-server-generated-suaggerhub"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\spring-server-generated"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\Acc_MicroServicios\Acc_MicroServicios"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\MicroservicioDANE\ResolveDANEapi"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\HolaSpringBoot"/>
+			<item value="C:\Users\osvaldo.diaz\Documents\plantillasuage\ResolveEnigmaApi"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

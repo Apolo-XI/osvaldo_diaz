@@ -1,0 +1,17 @@
+package io.swagger.repository;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
+
+import io.swagger.model.RegistrarRequest;
+
+@EnableScan
+public interface OfertaRepository extends CrudRepository<RegistrarRequest, String>{
+	
+	public List<RegistrarRequest> findByProducto(String producto);
+	public List<RegistrarRequest> findByIdnegocio(String Idnegocio);
+//	public List<RegistrarRequest> buscarporId(String ido);
+	
+}

@@ -1,0 +1,5 @@
+package co.com.accenture.service.service;
+
+public class AmazonS3Service {
+
+}

@@ -1,0 +1,5 @@
+package co.com.accenture.service.dynamo.configuration;
+
+public class DynamoConfiguration {
+
+}

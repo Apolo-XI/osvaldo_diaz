@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;PostMicroPersonas.java&apos; to &apos;OrquestadorCorregido/src/main/java/io.swagger.router&apos;&#x0D;&#x0A;- Original project: &apos;MicroservicioOrquestador&apos;&#x0D;&#x0A;- Destination element: &apos;OrquestadorCorregido/src/main/java/io.swagger.router&apos;&#x0D;&#x0A;- Original element: &apos;io.swagger.routes.PostMicroPersonas.java&apos;" description="Copy compilation unit" destination="=OrquestadorCorregido/src\/main\/java&lt;io.swagger.router" element1="/src\/main\/java&lt;io.swagger.routes{PostMicroPersonas.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1533756420311" units="1" version="1.0"/>
+</session>

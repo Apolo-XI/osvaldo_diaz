@@ -1,0 +1,19 @@
+package co.com.accenture.service.repository;
+
+import java.util.List;
+
+import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
+import org.springframework.data.repository.CrudRepository;
+
+import com.acn.crudusers.model.User;
+
+public class UserRespository {
+
+}
+
+
+
+@EnableScan
+public interface UserRepository extends CrudRepository<User, String>{
+	//public List<User> findByEmail(String email);
+}
