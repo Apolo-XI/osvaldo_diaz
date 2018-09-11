@@ -11,9 +11,7 @@ import io.swagger.model.RegistrarRequest;
 public interface OfertaRepository extends CrudRepository<RegistrarRequest, String>{
 	
 	public List<RegistrarRequest> findByProducto(String producto);
-	public List<RegistrarRequest> findByTipo(String tipo);
 	public List<RegistrarRequest> findByIdnegocio(String Idnegocio);
 //	public List<RegistrarRequest> buscarporId(String ido);
-	public List<RegistrarRequest> findByIdnegocioAndTipo(String Idnegocio, String Tipo );
 	
 }

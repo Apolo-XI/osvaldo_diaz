@@ -14,6 +14,5 @@ public interface OfertaRepository extends CrudRepository<RegistrarRequest, Strin
 	public List<RegistrarRequest> findByTipo(String tipo);
 	public List<RegistrarRequest> findByIdnegocio(String Idnegocio);
 //	public List<RegistrarRequest> buscarporId(String ido);
-	public List<RegistrarRequest> findByIdnegocioAndTipo(String Idnegocio, String Tipo );
 	
 }

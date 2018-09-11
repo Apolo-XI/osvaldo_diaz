@@ -173,32 +173,4 @@ public class ListarApiController implements ListarApi {
         return new ResponseEntity<JsonApiBodyRequest>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    public ResponseEntity<?> listarOfertaTipoGet(@ApiParam(value = "ID de la persona",required=true) 
-    @PathVariable("tipo") String tipo) {
-        String accept = request.getHeader("Accept");
-        if (accept != null && accept.contains("application/json")) {
-        	JsonApiBodyResponseErrors responseErrors = new JsonApiBodyResponseErrors();
-	    	JsonApiBodyResponseSuccess responseSuccess = new JsonApiBodyResponseSuccess();
-        	try {
-    	        	List<RegistrarRequest> ofertas = (List<RegistrarRequest>) ofertaRepository.findByTipo(tipo);
-    	        	if (!ofertas.isEmpty()) {
-    	        		JsonApiBodyRequest body_response = new JsonApiBodyRequest();
-        				body_response.setOferta(ofertas);
-        				return new ResponseEntity<JsonApiBodyRequest>(body_response, HttpStatus.OK);
-					}else {
-						responseErrors.setCode("58");
-		        		responseErrors.setDetalle("NO EXISTEN OFERTAS DE ESE PRODUCTO");
-		        		return new ResponseEntity<JsonApiBodyResponseErrors>(responseErrors, HttpStatus.FAILED_DEPENDENCY);
-					}
-    	    } catch (Exception e) {
-    	    	responseErrors.setCode("051");
-        		responseErrors.setDetalle("NO SE PUDO COMUNICAR CON LA BASE DE DATOS");
-        		return new ResponseEntity<JsonApiBodyResponseErrors>(responseErrors, HttpStatus.FAILED_DEPENDENCY);
-    			
-    		}
-        }
-
-        return new ResponseEntity<JsonApiBodyRequest>(HttpStatus.NOT_IMPLEMENTED);
-    }
-
 }

@@ -22,7 +22,6 @@ INDEX VERSION 1.131+C:\Users\osvaldo.diaz\Documents\workspace-sts-3.9.5.RELEASE\
 2978901890.index
 4277094586.index
 2206518738.index
-2966357691.index
 1693191123.index
 3412651212.index
 3888208819.index

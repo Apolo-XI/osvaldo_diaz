@@ -66,23 +66,4 @@ public interface ListarApi {
         method = RequestMethod.GET)
     ResponseEntity<?> listarProductoProductoGet(@ApiParam(value = "ID de la persona",required=true) @PathVariable("producto") String producto);
 
-    @ApiOperation(value = "Busqueda de ofertas por tipo de oferta", nickname = "listarOfertaTipoGet", notes = "Busqueda de ofertas por tipo de oferta en la tabla ofertas de la base de datos.", response = JsonApiBodyRequest.class, tags={ "ofertas", })
-    @ApiResponses(value = { 
-        @ApiResponse(code = 200, message = "OK", response = JsonApiBodyRequest.class),
-        @ApiResponse(code = 404, message = "NO ENCONTRADO", response = JsonApiBodyResponseErrors.class) })
-    @RequestMapping(value = "/listar/tipo/{tipo}",
-        produces = { "application/json" }, 
-        method = RequestMethod.GET)
-    ResponseEntity<?> listarOfertaTipoGet(@ApiParam(value = "ID de la persona",required=true) @PathVariable("tipo") String tipo);
-
-
-//    @ApiOperation(value = "Busqueda de ofertas por tipo de oferta", nickname = "listarOfertaTipoGet", notes = "Busqueda de ofertas por tipo de oferta en la tabla ofertas de la base de datos.", response = JsonApiBodyRequest.class, tags={ "ofertas", })
-//    @ApiResponses(value = { 
-//        @ApiResponse(code = 200, message = "OK", response = JsonApiBodyRequest.class),
-//        @ApiResponse(code = 404, message = "NO ENCONTRADO", response = JsonApiBodyResponseErrors.class) })
-//    @RequestMapping(value = "/listar/tipo/{tipo}",
-//        produces = { "application/json" }, 
-//        method = RequestMethod.GET)
-//    ResponseEntity<?> listarOfertaTipoIdadminGet(@ApiParam(value = "ID de la persona",required=true) @PathVariable("tipo") String tipo);
-
 }

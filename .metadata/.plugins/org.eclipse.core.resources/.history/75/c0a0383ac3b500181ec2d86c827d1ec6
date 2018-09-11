@@ -72,17 +72,17 @@ public class EliminarApiController implements EliminarApi {
                           return new ResponseEntity<JsonApiBodyResponseErrors>(responseErrors, HttpStatus.FAILED_DEPENDENCY);
                     } else {
                     	try {
-//                    		userRepository.delete(id);
-//                            responseSuccess.setEstado(persona.getEstado());
-//                            responseSuccess.setId(persona.getId());
-//                            responseSuccess.setNombre(persona.getNombre());
-//                            return new ResponseEntity<JsonApiBodyResponseSuccess>(responseSuccess, HttpStatus.OK);
-                    		persona.setEstado("Inactivo");
-                    		RegistrarRequest respuestadb = userRepository.save(persona);
-			            	responseSuccess.setEstado(respuestadb.getEstado());
-			            	responseSuccess.setId(respuestadb.getId());
-			            	responseSuccess.setNombre(respuestadb.getNombre());   			            	
-			            	return new ResponseEntity<JsonApiBodyResponseSuccess>(responseSuccess, HttpStatus.OK);
+                    		userRepository.delete(id);
+                            responseSuccess.setEstado(persona.getEstado());
+                            responseSuccess.setId(persona.getId());
+                            responseSuccess.setNombre(persona.getNombre());
+                            return new ResponseEntity<JsonApiBodyResponseSuccess>(responseSuccess, HttpStatus.OK);
+//                    		persona.setEstado("Inactivo");
+//                    		RegistrarRequest respuestadb = userRepository.save(persona);
+//			            	responseSuccess.setEstado(respuestadb.getEstado());
+//			            	responseSuccess.setId(respuestadb.getId());
+//			            	responseSuccess.setNombre(respuestadb.getNombre());   			            	
+//			            	return new ResponseEntity<JsonApiBodyResponseSuccess>(responseSuccess, HttpStatus.OK);
     					} catch (Exception e) {
     						// TODO: handle exception
     						responseErrors.setCodigo(flagsInformation.CODE_5001);

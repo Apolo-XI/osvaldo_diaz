@@ -42,9 +42,6 @@ public class RegistrarRequest   {
 	
 	@JsonProperty("longitud")
 	private String longitud = null;
-	
-	@JsonProperty("tipo")
-	private String tipo = null;
 //
 
   @JsonProperty("valor")
@@ -213,34 +210,15 @@ public class RegistrarRequest   {
   public void setLongitud(String longitud) {
     this.longitud = longitud;
   }
-  
-  public RegistrarRequest tipo (String tipo) {
-	    this.tipo = tipo;
-	    return this;
-	  }
-  
-  /**
-   *Get Tipo
-   *@return tipo
-    **/
-   
-   @ApiModelProperty(required = true, value = "")
-   @NotNull
-
-   @DynamoDBAttribute
-   public String getTipo() {
-     return tipo;
-   }
-
-   public void setTipo(String tipo) {
-     this.tipo = tipo;
-   }
 
   public RegistrarRequest valor(String valor) {
     this.valor = valor;
     return this;
   }
   
+   
+   
+
   /**
    * Get valor
    * @return valor
